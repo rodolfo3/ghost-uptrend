@@ -1,0 +1,14 @@
+{{!< default}}
+
+<section class="content">
+
+  <ul class="listing">
+    {{#foreach posts}}
+    <li>
+      <span>{{date published_at format="DD MMMM YYYY"}}</span> <a href="{{url}}">{{title}}</a>
+    </li>
+    {{/foreach}}
+  </ul>
+</section>
+
+{{pagination}}
